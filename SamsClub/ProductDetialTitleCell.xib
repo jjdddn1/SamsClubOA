@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProductDetialTitleCell" customModule="SamsClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYC-XP-kvO">
+                        <rect key="frame" x="8" y="8" width="304" height="65.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lO-Yh-jUQ" customClass="RatingView" customModule="SamsClub" customModuleProvider="target">
+                        <rect key="frame" x="8" y="81.5" width="70" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="mWz-eC-4ty"/>
+                            <constraint firstAttribute="height" constant="10" id="qTt-mF-aog"/>
+                        </constraints>
+                    </view>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-yE-KIQ">
+                        <rect key="frame" x="86" y="73" width="34" height="27"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="0Wm-Jv-gSR"/>
+                            <constraint firstAttribute="width" constant="34" id="BQs-NR-S8r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-zd-CcI">
+                        <rect key="frame" x="235" y="79" width="77" height="15.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15.5" id="har-sT-ddl"/>
+                            <constraint firstAttribute="width" constant="77" id="o5N-Zo-oHm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="lYC-XP-kvO" secondAttribute="leading" id="6y1-fc-iBG"/>
+                    <constraint firstItem="6lO-Yh-jUQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DAJ-NB-dpX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lYC-XP-kvO" secondAttribute="trailing" id="Ewr-Qa-n50"/>
+                    <constraint firstAttribute="topMargin" secondItem="lYC-XP-kvO" secondAttribute="top" id="YT1-Gv-VIS"/>
+                    <constraint firstItem="6lO-Yh-jUQ" firstAttribute="top" secondItem="lYC-XP-kvO" secondAttribute="bottom" constant="8" id="nwQ-6F-n4T"/>
+                    <constraint firstItem="Aej-yE-KIQ" firstAttribute="leading" secondItem="6lO-Yh-jUQ" secondAttribute="trailing" constant="8" id="oiZ-ls-0tD"/>
+                    <constraint firstItem="Lad-zd-CcI" firstAttribute="centerY" secondItem="6lO-Yh-jUQ" secondAttribute="centerY" id="qML-eB-K8D"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Lad-zd-CcI" secondAttribute="trailing" id="t6C-PK-vf9"/>
+                    <constraint firstItem="Aej-yE-KIQ" firstAttribute="centerY" secondItem="6lO-Yh-jUQ" secondAttribute="centerY" id="tIS-4T-7MM"/>
+                    <constraint firstAttribute="bottom" secondItem="6lO-Yh-jUQ" secondAttribute="bottom" constant="8" id="wqQ-2H-X1H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inStockLabel" destination="Lad-zd-CcI" id="hJL-20-PjC"/>
+                <outlet property="ratingCountLabel" destination="Aej-yE-KIQ" id="Sbj-8B-I6Y"/>
+                <outlet property="ratingView" destination="6lO-Yh-jUQ" id="jGO-aO-UeW"/>
+                <outlet property="titleLabel" destination="lYC-XP-kvO" id="QmS-yE-8zl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
