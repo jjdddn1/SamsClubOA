@@ -60,8 +60,10 @@ class RatingView: UIView {
         }
         
         let solidStarNum = Int(rating)
-        for i in 0..<solidStarNum {
-            starImageViews[i].image = #imageLiteral(resourceName: "star_icon")
+        if solidStarNum >= 1{
+            for i in 1...solidStarNum {
+                starImageViews[i - 1].image = #imageLiteral(resourceName: "star_icon")
+            }
         }
         
         if solidStarNum == 5 {
@@ -73,6 +75,12 @@ class RatingView: UIView {
             starImageViews[solidStarNum].image = #imageLiteral(resourceName: "star_icon")
         } else if restStar > 0.3 {
             starImageViews[solidStarNum].image = #imageLiteral(resourceName: "star_half_icon")
+        }
+        
+        if solidStarNum < 5 {
+            for i in (solidStarNum + 1)...5 {
+                starImageViews[i - 1].image = #imageLiteral(resourceName: "start_empty_icon")
+            }
         }
     }
 }

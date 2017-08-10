@@ -53,7 +53,7 @@ class ProductListTableViewCell: UITableViewCell {
         titleLable.sizeToFit()
         ratingView.setRating(rating: rating)
         if let count = ratingCount {
-            reviewNumLabel.text = "\(count)"
+            reviewNumLabel.text = "(\(count))"
         }
         priceLabel.text = price
         

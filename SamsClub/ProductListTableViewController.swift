@@ -178,6 +178,10 @@ extension ProductListTableViewController: ProductDetailPageViewDataSource, Produ
             return itemData[index + 1]
         }
         
+        if let index = index, index == itemData.count - 1 {
+            sendRequest(page: page)
+        }
+        
         return nil
     }
     

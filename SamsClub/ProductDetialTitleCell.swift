@@ -20,7 +20,7 @@ class ProductDetialTitleCell: UITableViewCell {
         }
         ratingView.setRating(rating: rating)
         if let ratingCount = ratingCount {
-            ratingCountLabel.text = "\(ratingCount)"
+            ratingCountLabel.text = "(\(ratingCount))"
         }
         if let inStock = inStock, inStock {
             inStockLabel.text = "In Stock"
