@@ -22,7 +22,7 @@ class ImageService {
     }
     
     private func cache(image: UIImage, for url: URL) {
-        
+        cache.setObject(image, forKey: url.absoluteString as NSString)
     }
     
     // MARK: - public
@@ -33,6 +33,7 @@ class ImageService {
         
         if let image = image(for: url) {
             success(image)
+            return
         }
         
         DispatchQueue.global().async { [weak self] in

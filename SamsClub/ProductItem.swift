@@ -12,6 +12,9 @@ struct ProductItem {
     ///Unique Id of the product
     var productId: String?
     
+    /// The time taht this data is created
+    var createdTime: Date?
+    
     /// Product Name
     var productName: String?
     
@@ -48,12 +51,14 @@ struct ProductItem {
         reviewRating = dict["reviewRating"] as? Double
         reviewCount = dict["reviewCount"] as? Int
         inStock = dict["inStock"] as? Bool
+        
+        createdTime = Date()
     }
 }
 
 extension ProductItem: Equatable {
     public static func ==(lhs: ProductItem, rhs: ProductItem) -> Bool {
-        if lhs.productId == rhs.productId {
+        if lhs.productId == rhs.productId, lhs.createdTime == rhs.createdTime {
             return true
         }
         
