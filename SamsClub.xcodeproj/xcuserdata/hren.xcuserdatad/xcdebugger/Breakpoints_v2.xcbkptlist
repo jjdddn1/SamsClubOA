@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SamsClub/ProductListTableViewController.swift"
-            timestampString = "524042731.46266"
+            timestampString = "524072407.166944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "productDetailPageView(productDetailPageView:didShowProductItem:)"
             landmarkType = "7">
          </BreakpointContent>

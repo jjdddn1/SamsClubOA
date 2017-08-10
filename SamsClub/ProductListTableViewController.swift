@@ -185,6 +185,7 @@ extension ProductListTableViewController: ProductDetailPageViewDataSource, Produ
         guard let index = itemData.index(of: productItem) else {
             assert(false, "can't find productItem, something's wrong!")
         }
+        tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .none, animated: false)
         setSelectedCellInformation(for: IndexPath(row: index, section: 0))
     }
 }
